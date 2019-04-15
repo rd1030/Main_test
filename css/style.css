@@ -1,0 +1,458 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  color: #0d3351;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  font-family: RobotoSlab;
+  background-color: #F3F3F3;
+}
+a {
+  text-decoration: none;
+  color:inherit;
+}
+header{
+  background: url('../img/sochi.png') no-repeat top center fixed;
+  height:647px;
+}
+
+h1{
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+h1 span{
+  font-size: 90px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0;
+  letter-spacing: -2.5px;
+  text-align: center;
+}
+.big-text{
+  margin-top:2em;
+  padding-bottom:2em;
+}
+#hamburger-icon {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  display: block;
+  margin:2em 4em;
+}
+#hamburger-icon .line {
+  display: block;
+  background: #0d3351;
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  border-radius: 4px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+#hamburger-icon .line.line-1 {
+  top: 0;
+}
+#hamburger-icon .line.line-2 {
+  top: 50%;
+}
+#hamburger-icon .line.line-3 {
+  top: 100%;
+}
+#hamburger-icon:hover .line-1, #hamburger-icon:focus .line-1 {
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+}
+#hamburger-icon:hover .line-3, #hamburger-icon:focus .line-3 {
+  transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+}
+#hamburger-icon.active .line-1 {
+  transform: translateY(10px) translateX(0) rotate(45deg);
+  -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
+  -moz-transform: translateY(10px) translateX(0) rotate(45deg);
+}
+#hamburger-icon.active .line-2 {
+  opacity: 0;
+}
+#hamburger-icon.active .line-3 {
+  transform: translateY(-10px) translateX(0) rotate(-45deg);
+  -webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
+  -moz-transform: translateY(-10px) translateX(0) rotate(-45deg);
+}
+
+#nav {
+  overflow: hidden;
+  background: #0d3351;
+  height: 0;
+  width:420px;
+  margin-left:4.5em;
+  font-size: 18px;
+  font-family: RobotoSlab;
+  list-style-type: none;
+  padding-left: 0;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+  position:absolute;
+  top:4em;
+
+}
+
+#nav.open {
+  height: auto;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+  height:270px;
+  display: flex;
+  padding-top:1%;
+  justify-content: center;
+  position:absolute;
+  top:4em;
+}
+
+#nav li {
+  float: none;
+  text-align: center;
+  text-decoration: none;
+  width: 420px;
+  margin: 0;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+}
+
+#nav li a {
+text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+  margin: 0;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+}
+.top-menu-all{
+    display: flex;
+}
+.top-menu-right{
+  display: flex;
+  justify-content: flex-end;
+  width:100%;
+  margin-top:2em;
+}
+.block-top-menu:not(:last-child){
+  margin-right:2em;
+}
+.top-menu {
+  width:420px;
+
+}
+.wrapper{
+  width:1150px;
+  margin:0 auto;
+
+}
+.block-top-menu img{
+  vertical-align: middle;
+
+}
+
+span.arr{
+	vertical-align: middle;
+	margin: 0 5px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 4px solid #0d3351;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+}
+.support{
+  display: flex;
+  text-align: center;
+  flex-wrap:wrap;
+  width:180px;
+  font-family: RalewayBold;
+  margin:0;
+  padding:0;
+
+
+}
+.support a{
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  height:0px;
+
+}
+.support span{
+  font-family: Raleway;
+  font-size: 14px;
+}
+.button-cruise{
+  all: unset;
+  padding:1em 3em;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.7px;
+  text-align: center;
+  background-color:#33c7fd;
+  color:#fff;
+  margin-top:0em;
+}
+.curve-line{
+  margin-top:2em;
+}
+/* end header*/
+section{
+  margin-top:7em;
+}
+h2{
+  font-family: RobotoSlab;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.8px;
+  padding:0;
+  margin:0;
+  margin-bottom:0.25em;
+}
+h3{
+  font-size:20px;
+  font-weight: normal;
+  color:#00a2dd;
+}
+.sort-by-price{
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+.all-content{
+  display: flex;
+  margin-top:2em;
+  height:100%;
+  flex-wrap: wrap;
+  width:1150px;
+  justify-content: center;
+  margin-bottom:3em;
+}
+.main-content{
+  width:555px;
+  margin-right: 0;
+  margin-right:2em;
+  padding:0;
+  background-color:#fff;
+  text-align:left;
+  height:100%;
+  margin-bottom:1.5em;
+}
+.double-block{
+  display: flex;
+  height:100%;
+  flex-wrap: wrap;
+  width:555px;
+}
+.main-content-margin-bottom{
+  margin-bottom:1.5em;
+}
+.flex{
+  display: flex;
+
+}
+.arr-top{
+  margin-top:1.4em;
+}
+.wrapper-for-text{
+  margin-left:2em;
+}
+.description{
+  line-height: 1.71;
+  letter-spacing: 0.7px;
+}
+.price{
+  margin-top:0.5em;
+  font-family: RobotoSlab;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  padding-bottom: 0.5em;
+}
+.double-block .price {
+  padding-bottom: 0.25em;
+}
+.wrapper-content{
+  width:1150px;
+  margin:0 auto;
+  display: flex;
+}
+.block-price {
+  display:flex;
+}
+.old-price {
+  margin-top:1.5em;
+  margin-left:1em;
+  opacity: 0.55;
+  font-family: RobotoSlab;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.9px;
+}
+.margin-right{
+  margin-right:0px;
+}
+
+footer{
+  height:100%;
+  background-color:#fff;
+}
+.content-footer{
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.7px;
+  line-height: 1.71;
+}
+.contancts{
+  margin:  2em 0;
+  display: flex;
+
+  display: block;
+  width:180px;
+
+}
+.contancts a{
+  display: block;
+}
+.connect {
+  margin: 2em 0;
+  width: 220px;
+}
+.support-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width:70%;
+}
+.support {
+  width:275px;
+}
+.support-margin{
+    margin: 2em 0;
+}
+.support a{
+  display: block;
+  margin-bottom:1.5em;
+}
+container {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-height: 80px;
+}
+
+ul.submenu {
+  background-color: #0d3351;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 2px 6px;
+  margin: 0;
+  overflow: hidden;
+}
+ul.submenu li {
+  display: inline-block;
+}
+ul.submenu li a i.fa {
+  padding: ;
+  display: inline-block;
+  border: 1px solid transparent;
+  color: #ccc;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  position: relative;
+  z-index: 2;
+}
+ul.submenu li a i.fa::after {
+  content: "";
+  height: 0%;
+  width: 0%;
+  position: absolute;
+  top: -500%;
+  bottom: -500%;
+  left: -500%;
+  right: -500%;
+  margin: auto;
+  border: 0px solid transparent;
+  border-radius: 200px;
+  opacity: 0;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+ul.submenu li a:hover i.fa::before {
+  color: #fff;
+}
+ul.submenu li a:hover i.fa-facebook::after {
+  height: 300%;
+  width: 275%;
+  background-color: #3b5998;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-odnoklassniki::after {
+  height: 300%;
+  width: 275%;
+  background-color: #1dcaff;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-instagram::after {
+  height: 300%;
+  width: 275%;
+  background-color: #d34836;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-youtube::after {
+  height: 300%;
+  width: 275%;
+  background-color: #8a3ab9;
+  border-radius: 0px;
+  opacity: 1;
+}
+
+
+
+
+@font-face {
+    font-family: RobotoSlab; /* Гарнитура шрифта */
+    src: url(fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+       font-family: RalewayBold; /* Гарнитура шрифта */
+       src: url(fonts/Raleway-Bold.ttf); /* Путь к файлу со шрифтом */
+      }
+  @font-face {
+             font-family: Raleway; /* Гарнитура шрифта */
+             src: url(fonts/Raleway-Regular.ttf); /* Путь к файлу со шрифтом */
+            }

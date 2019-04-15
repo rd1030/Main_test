@@ -1,0 +1,77 @@
+<html>
+<meta charset="UTF-8" />
+
+<head>
+  <title>Всплывающие модальные окна (popup) с помощью CSS и JS</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      $(".mymagicoverbox").click(function() {
+        $('#myfond_gris').fadeIn(300);
+        var iddiv = $(this).attr("iddiv");
+        $('#' + iddiv).fadeIn(300);
+        $('#myfond_gris').attr('opendiv', iddiv);
+        return false;
+      });
+
+      $('#myfond_gris, .mymagicoverbox_fermer').click(function() {
+        var iddiv = $("#myfond_gris").attr('opendiv');
+        $('#myfond_gris').fadeOut(300);
+        $('#' + iddiv).fadeOut(300);
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <div align="center" class="fond">
+    <div id="myfond_gris" opendiv=""></div>
+    <div>
+
+      <div iddiv="box_1" class="mymagicoverbox">
+        Кнопка пример 1
+      </div>
+
+      <div iddiv="box_2" class="mymagicoverbox">
+        Кнопка пример 2
+      </div>
+
+    </div>
+
+
+    <div id="box_1" class="mymagicoverbox_fenetre">
+      Заголовок первого первого окна!
+      <div class="mymagicoverbox_fenetreinterieur">
+
+        <div >
+          <br>Тебе нравится спорт?
+          <br><br>
+
+
+          <div class="mymagicoverbox_fermer">НЕТ</div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="box_2" class="mymagicoverbox_fenetre" style="left:-225px; width:450px;">
+      Заголовок второго окна!
+      <div class="mymagicoverbox_fenetreinterieur" style="height:150px; ">
+        <div align="center">
+          <br>Земля круглая?
+          <br><br>
+          <div style="width:100px" align="center" class="mymagicoverbox_fermer">ДА</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
