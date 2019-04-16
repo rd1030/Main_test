@@ -32,6 +32,12 @@ h1 span{
   letter-spacing: -2.5px;
   text-align: center;
 }
+.hidden{
+opacity:0;
+}
+.visible{
+opacity:1;
+}
 .big-text{
   margin-top:2em;
   padding-bottom:2em;
@@ -647,13 +653,13 @@ ul.submenu li a:hover i.fa-youtube::after {
 
 @font-face {
     font-family: RobotoSlab; /* Гарнитура шрифта */
-    src: url(fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
+    src: url('../fonts/RobotoSlab-Regular.ttf'); /* Путь к файлу со шрифтом */
    }
 @font-face {
        font-family: RalewayBold; /* Гарнитура шрифта */
-       src: url(fonts/Raleway-Bold.ttf); /* Путь к файлу со шрифтом */
+       src: url('../fonts/Raleway-Bold.ttf'); /* Путь к файлу со шрифтом */
       }
   @font-face {
              font-family: Raleway; /* Гарнитура шрифта */
-             src: url(fonts/Raleway-Regular.ttf); /* Путь к файлу со шрифтом */
+             src: url('../fonts/Raleway-Regular.ttf'); /* Путь к файлу со шрифтом */
             }
