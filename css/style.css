@@ -176,7 +176,7 @@ span.arr{
   display: flex;
   text-align: center;
   flex-wrap:wrap;
-  width:180px;
+  width:160px;
   font-family: RalewayBold;
   margin:0;
   padding:0;
@@ -188,11 +188,11 @@ span.arr{
   font-weight: bold;
   letter-spacing: 0.7px;
   height:0px;
-
 }
 .support span{
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 12px;
+  margin-top:0;
 }
 
 a.style-for-button {
@@ -401,6 +401,12 @@ transform: rotate(-45deg);
   display:none;
   background-color:#ffffff;
 }
+.description{
+    letter-spacing: 0.2px;
+}
+.decription-for-window{
+  font-size:18px;
+}
 .mymagicoverbox_fenetreinterieur {
   overflow:auto;
 
@@ -442,7 +448,7 @@ transform: rotate(-45deg);
 }
 .wrapper-for-window{
 	display: flex;
-	margin-top:115px;
+	margin-top:75px;
 	margin-left:30px;
 }
 .text-for-window {
@@ -489,15 +495,24 @@ footer{
   justify-content: flex-end;
   width:70%;
 }
-.support {
+.support-2 {
   width:275px;
+}
+.support-2 a{
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  height:0px;
 }
 .support-margin{
     margin: 2em 0;
 }
-.support a{
+.support-2 a{
   display: block;
-  margin-bottom:1.5em;
+  margin-bottom:1em;
+}
+.support-2 .phone-sup{
+  font-size:12px;
 }
 container {
   text-align: center;
@@ -602,8 +617,8 @@ ul.submenu li a:hover i.fa-youtube::after {
   z-index:2;
   height:0px;
   font-family: Raleway;
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 16px;
+  font-weight: 100;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 0.7px;
