@@ -9,7 +9,7 @@
   <!--<link rel="stylesheet" href="scss/style.scss">-->
   <link rel="stylesheet" href="css/style.css">
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-
+  <link rel="stylesheet" href="css/fm.revealator.jquery.css">
 </head>
 
 <body>
@@ -62,34 +62,37 @@
           </div>
         </div>
       </div><!-- top-menu-all-->
-      <div class="content-header post">
+      <div class="content-header revealator-slideup revealator-once">
         <img src="img/logo.png" alt="true_content">
         <h1>
           <div class="margin-bot">Морские прогулки</div><br>
           <span class="big-text">ПО ЧЕРНОМУ МОРЮ</span>
         </h1>
-        <div id="menu">
+        <div id="menu" class="revealator-slideup revealator-delay1 revealator-once">
           <a class="style-for-button slow-for-button" href="#cruise">
           Выбрать круиз
         </a>
       </div>
       </div>
-      <img src="svg/1.svg" class="curve-line " alt="true_content">
-
+      <div class="revealator-slideup revealator-delay2 revealator-once">
+        <img src="svg/1.svg" class="curve-line " alt="true_content">
+      </div>
     </div><!-- wrapper-->
 
   </header>
   <section id="cruise">
+    <div class="revealator-slideup revealator-delay3 revealator-once">
     <h2>Каталог круизов</h2>
     <div class="sort-by-price">
       Сортировать круизы по <a href="#"><i>цене</i>
         <span class="arr"></span></a>
     </div>
+  </div>
 
     <div class="wrapper">
       <div class="all-content">
 
-        <div class="main-content post">
+        <div class="main-content revealator-slideup revealator-once">
           <div id="myfond_gris" opendiv=""></div>
           <div iddiv="box_1" class="mymagicoverbox">
             <div class="sell-content">
@@ -120,7 +123,7 @@
         </div><!-- main-content-->
 
 
-        <div id="box_1" class="mymagicoverbox_fenetre post">
+        <div id="box_1" class="mymagicoverbox_fenetre">
           <div class="mymagicoverbox_fermer">
             <span class="close"></span>
           </div>
@@ -169,7 +172,7 @@
           </div> <!-- mymagicoverbox_fenetreinterieur-->
         </div> <!-- id: box-1-->
 
-        <div class="double-block post">
+        <div class="double-block revealator-slideup revealator-once">
           <div class="main-content main-content-margin-bottom">
             <div id="myfond_gris" opendiv=""></div>
             <div iddiv="box_1" class="mymagicoverbox">
@@ -206,7 +209,7 @@
           </div>
           <!--main content -->
 
-          <div class="main-content post">
+          <div class="main-content revealator-slideup revealator-once">
             <div id="myfond_gris" opendiv=""></div>
             <div iddiv="box_1" class="mymagicoverbox">
               <div class="sell-content">
@@ -243,7 +246,7 @@
           <!--main content -->
         </div><!-- double-block-->
 
-        <div class="main-content post">
+        <div class="main-content revealator-slideup revealator-once">
           <div id="myfond_gris" opendiv=""></div>
           <div iddiv="box_1" class="mymagicoverbox">
             <img src="img/novorossiysk.jpg" alt="True_content">
@@ -270,7 +273,7 @@
         </div>
         <!--main content -->
 
-        <div class="main-content margin-right post">
+        <div class="main-content margin-right revealator-slideup revealator-once">
           <div id="myfond_gris" opendiv=""></div>
           <div iddiv="box_1" class="mymagicoverbox">
             <img src="img/sea.jpg" alt="True_content">
@@ -296,7 +299,7 @@
           </div> <!-- mymagicoverbox -->
         </div>
         <!--main content -->
-        <div id="menu-2">
+        <div id="menu-2" class="revealator-slideup revealator-once">
         <a class="style-for-button blue-style slow-for-button" href="#top">
           Больше круизов
         </a>
@@ -305,7 +308,7 @@
     </div><!-- wrapper -->
   </section>
 
-  <footer class="post">
+  <footer class="revealator-slideup revealator-once">
     <div class="wrapper">
       <div class="content-footer">
         <div class="contancts">
@@ -348,11 +351,11 @@
 
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/fm.revealator.jquery.js"></script>
   <script src="js/main.js"></script>
   <script src="js/new-window.js"></script>
 
-  <!--<script src="js/some-jquery.js"></script>-->
 
 
 

@@ -108,6 +108,7 @@ opacity:1;
   transition: linear 1s;
   position:absolute;
   top:4em;
+  z-index:5;
 
 }
 
