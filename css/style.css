@@ -5,6 +5,8 @@ body {
   text-align: center;
   font-family: RobotoSlab;
   background-color: #F3F3F3;
+  margin:0;
+  padding:0;
 }
 a {
   text-decoration: none;
@@ -580,7 +582,51 @@ ul.submenu li a:hover i.fa-youtube::after {
   border-radius: 0px;
   opacity: 1;
 }
+/* Флажки*/
 
+.sell-content SPAN {
+  height:0;
+  }
+.sell-content {
+  position: relative;
+  right:2em;
+  top:2em;
+  float:right;
+  height: 0;
+  }
+.sell-content .text-for-sell {
+  position:relative;
+  width:60px;
+  bottom:2em;
+  left:1em;
+  z-index:2;
+  height:0px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color:white;
+}
+.text-for-sell_center{
+  text-align: center;
+  width:100%;
+}
+.sell-content SPAN:before {
+    content: "";
+    position: relative;
+    border: 50px solid transparent;
+    border-color: #33c7fd;
+    }
+.sell-content SPAN.red-sell-content:before{
+    border-color: #f20542;
+}
+.sell-content SPAN:before,
+        SPAN:after {
+          border-bottom-color: transparent !important;
+          }
 
 
 
