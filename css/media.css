@@ -56,6 +56,12 @@
   }
 }
 @media (max-width: 740px) {
+  html{
+height: 100%;
+width:100%;
+overflow-x: hidden;
+}
+
   #hamburger-icon{
     margin: 1em 1em;
   }
